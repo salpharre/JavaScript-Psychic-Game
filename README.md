@@ -14,6 +14,10 @@ Game was created to practice JavaScript.
 
 ### General Info
 
+This game is to be played directly in the web browser. 
+
+
+
 
 
 #### Technologies
