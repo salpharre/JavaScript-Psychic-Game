@@ -38,11 +38,11 @@ for (let i = 6; i < -1; i--){
 }
 
 
-if ((userPredictions = "q" || (userPredictions = "z") || (userPredictions = "a") || 
-(userPredictions = "e") || (userPredictions = "d") || (userPredictions = "c") || 
-(userPredictions = "t") || (userPredictions = "g") || (userPredictions = "b") || 
-(userPredictions = "u") || (userPredictions = "j") || (userPredictions = "m") || 
-(userPredictions = "o") || (userPredictions = "l")) {
+if ((userPredictions === "q" || (userPredictions === "z") || (userPredictions === "a") || 
+(userPredictions === "e") || (userPredictions === "d") || (userPredictions === "c") || 
+(userPredictions === "t") || (userPredictions === "g") || (userPredictions === "b") || 
+(userPredictions === "u") || (userPredictions === "j") || (userPredictions === "m") || 
+(userPredictions === "o") || (userPredictions === "l")) ){
 
     for (let i = 6; i < -1; i--){
 
@@ -68,5 +68,4 @@ userGuessesE1.textContent = `Guesses so far: ${userGuessesE1}`;
 
 //guessesMax reaches 0 then it resets 
 
-
-}
+}}
