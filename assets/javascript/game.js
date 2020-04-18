@@ -1,7 +1,7 @@
-let userGuessesE1 = document.getElementById("user-guesses");
+/*let userGuessesE1 = document.getElementById("user-guesses");
 let guessesLeftE1 = document.getElementById("guesses-left");
 let userWinsE1 = document.getElementById("user-wins");
-let userLossesE1 = document.getElementById("user-losses");
+let userLossesE1 = document.getElementById("user-losses");*/
 
 
 let computerChoices = ["q", "z", "a", "e", "d", "c", "t", "g", "b", "u", "j", "m", "o", "l"];
@@ -31,7 +31,7 @@ if ((userPredictions === "q" || (userPredictions === "z") || (userPredictions ==
         document.getElementById("user-wins").innerHTML = `Wins: ${wins}`;
         guessesMax = 6;
         document.getElementById("guesses-left").innerHTML = `Guesses left: ${guessesMax}`;
-        //displayPrediction = [];    
+        //displayPrediction = []; ?   
         document.getElementById("user-guesses").innerHTML = `Guesses so far: `;
         //displayPredictions resets
         guessesMax = 6;
