@@ -1,5 +1,3 @@
-body {
-    position: center;
-    box-sizing: border-box;
-
+.section {
+    margin-left: 50px;
 }
