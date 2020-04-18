@@ -45,15 +45,14 @@ if ((userPredictions === "q" || (userPredictions === "z") || (userPredictions ==
 
         guessesLeftE1.innerHTML = `Guesses left: ${guessesMax}`;
         
-        //userPredictions.splice(0, userPredictions.length); //didn't work
-
-        //userGuessesE1.innerHTML = `Guesses so far: ${displayPredictions.splice(0, userPredictions.length)}`;
+    /*  */ 
         function empty(){
             displayPredictions.length = 0;
         }empty();
 
         userGuessesE1.innerHTML = `Guesses so far: `;
-        //displayPredictions resets
+    
+    /*  */
         guessesMax = 6;
 
 
@@ -85,9 +84,6 @@ if ((userPredictions === "q" || (userPredictions === "z") || (userPredictions ==
             guessesLeftE1.innerHTML = `Guesses left: ${guessesMax}`;
         }
 
-       /* if (wins++){
-            userPredictions.splice(0, userPredictions.length);
-        }*/
 }
 
 
