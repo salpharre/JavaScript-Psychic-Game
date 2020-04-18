@@ -7,7 +7,8 @@ let userLossesE1 = document.getElementById("user-losses");
 let computerChoices = ["q", "z", "a", "e", "d", "c", "t", "g", "b", "u", "j", "m", "o", "l"];
 
 let guessesMax = 6;
-//var for a feature that displays the wrong answers
+//let displayPredictions = 
+//var for a feature that displays the wrong answers?
 //userGuessesE1.textContent = `Guesses so far! ${userGuessesE1}'
 /* to display the letter
 document.userGuessesE1.innerHTML = `Guesses so far! ${userGuessesE1}'
@@ -30,9 +31,30 @@ let userPredictions = event.key;
 
 let computerSelection = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
-//loop for resetting?
+//loop for resetting? do/while loop?
+
+if (userPredictions === computerSelection) {
+    wins++
+    document.userGuessesE1.innerHTML = `Guesses so far: "" `;
+    document.userGuessesE1.innerHTML = `Guesses left: ${guessesMax}`
+    //displayPredictions resets
+    //guessesMax resets
+} else {
+    document.userGuessesE1.innerHTML = `Guesses so far: ${userGuessesE1}`;
+}
 
 
+//guessesMax reaches 0 then it resets 
+
+/*if ((userPredictions = "q" || (userPredictions = "z") || (userPredictions = "a") || 
+(userPredictions = "e")  || (userPredictions = "d") || (userPredictions = "c") || 
+(userPredictions = "t") || (userPredictions = "g") || (userPredictions = "b") || 
+(userPredictions = "u") || (userPredictions = "j") || (userPredictions = "m") || 
+(userPredictions = "o") || (userPredictions = "l")) {
+
+    wins++;
+
+}*/
 
 
 
