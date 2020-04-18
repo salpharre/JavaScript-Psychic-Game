@@ -32,12 +32,6 @@ let userPredictions = event.key;
 
 let computerSelection = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
-//loop for resetting? do/while loop?
-
-for (let i = 6; i < -1; i--){
-
-}
-
 
 if ((userPredictions === "q" || (userPredictions === "z") || (userPredictions === "a") || 
 (userPredictions === "e") || (userPredictions === "d") || (userPredictions === "c") || 
@@ -45,12 +39,12 @@ if ((userPredictions === "q" || (userPredictions === "z") || (userPredictions ==
 (userPredictions === "u") || (userPredictions === "j") || (userPredictions === "m") || 
 (userPredictions === "o") || (userPredictions === "l")) ){
 
-    //do {
         wins++;
         document.getElementById("user-wins").innerHTML = `Wins: ${wins}`;
-        //userGuessesE1.textContent = `Guesses so far: ${userPredictions}`;
-        //guessesLeftE1.textContent = `Guesses left: ${guessesMax}`
-        //userGuessesE1.innerHTML = `Guesses so far:  `;
+        guessesMax = 6;
+        document.getElementById("guesses-left").innerHTML = `Guesses left: ${guessesMax}`;
+        //displayPrediction = [];    
+        document.getElementById("user-guesses").innerHTML = `Guesses so far: `;
         //displayPredictions resets
         guessesMax = 6;
     } else {
@@ -60,15 +54,27 @@ if ((userPredictions === "q" || (userPredictions === "z") || (userPredictions ==
         document.getElementById("guesses-left").innerHTML = `Guesses left: ${guessesMax}`;
         
     } 
-    //while (i < -1);
+    
+    if (guessesMax === 0){
+            losses++;
+            document.getElementById("user-losses").innerHTML = `Losses: ${losses}`;
+            document.getElementById("user-guesses").innerHTML = `Guesses so far: `;
+            guessesMax = 6;
+            document.getElementById("guesses-left").innerHTML = `Guesses left: ${guessesMax}`;
+        }
 
 }
+   
 
 
-userWinsE1.textContent = `Wins: ${wins}`;
+
+
+
+
+/*userWinsE1.textContent = `Wins: ${wins}`;
 userLossesE1.textContent = `Losses: ${losses}`;
 userGuessesE1.textContent = `Guesses so far: ${userGuessesE1}`;
-guessesLeftE1.textContent = `Guesses left: ${guessesMax}`
+guessesLeftE1.textContent = `Guesses left: ${guessesMax}`*/
 
 
 //guessesMax reaches 0 then it resets 
