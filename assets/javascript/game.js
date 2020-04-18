@@ -33,32 +33,40 @@ let computerSelection = computerChoices[Math.floor(Math.random() * computerChoic
 
 //loop for resetting? do/while loop?
 
-if (userPredictions === computerSelection) {
-    wins++
-    document.userGuessesE1.innerHTML = `Guesses so far: "" `;
-    document.userGuessesE1.innerHTML = `Guesses left: ${guessesMax}`
-    //displayPredictions resets
-    //guessesMax resets
-} else {
-    document.userGuessesE1.innerHTML = `Guesses so far: ${userGuessesE1}`;
+for (let i = 6; i < -1; i--){
+
 }
 
 
-//guessesMax reaches 0 then it resets 
-
-/*if ((userPredictions = "q" || (userPredictions = "z") || (userPredictions = "a") || 
-(userPredictions = "e")  || (userPredictions = "d") || (userPredictions = "c") || 
+if ((userPredictions = "q" || (userPredictions = "z") || (userPredictions = "a") || 
+(userPredictions = "e") || (userPredictions = "d") || (userPredictions = "c") || 
 (userPredictions = "t") || (userPredictions = "g") || (userPredictions = "b") || 
 (userPredictions = "u") || (userPredictions = "j") || (userPredictions = "m") || 
 (userPredictions = "o") || (userPredictions = "l")) {
 
-    wins++;
-
-}*/
+    for (let i = 6; i < -1; i--){
 
 
+    if (userPredictions === computerSelection) {
+        wins++;
+        userGuessesE1.textContent = `Guesses so far: ${userPredictions}`;
+        guessesLeftE1.textContent = `Guesses left: ${guessesMax}`
+        //userGuessesE1.innerHTML = `Guesses so far:  `;
+        //displayPredictions resets
+        //guessesMax resets
+    } else {
+        userGuessesE1.textContent = `Guesses so far: ${userGuessesE1}`;
+    }
+
+}
 
 
+userWinsE1.textContent = `Wins: ${wins}`;
+userLossesE1.textContent = `Losses: ${losses}`;
+userGuessesE1.textContent = `Guesses so far: ${userGuessesE1}`;
+
+
+//guessesMax reaches 0 then it resets 
 
 
 }
