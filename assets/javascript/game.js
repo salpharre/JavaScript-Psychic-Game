@@ -7,7 +7,8 @@ let userLossesE1 = document.getElementById("user-losses");
 let computerChoices = ["q", "z", "a", "e", "d", "c", "t", "g", "b", "u", "j", "m", "o", "l"];
 
 let guessesMax = 6;
-//let displayPredictions = 
+let displayPredictions = []
+//document.getElementById("user-guesses").innerHTML = displayPredictions;
 //var for a feature that displays the wrong answers?
 //userGuessesE1.textContent = `Guesses so far! ${userGuessesE1}'
 /* to display the letter
@@ -44,19 +45,22 @@ if ((userPredictions === "q" || (userPredictions === "z") || (userPredictions ==
 (userPredictions === "u") || (userPredictions === "j") || (userPredictions === "m") || 
 (userPredictions === "o") || (userPredictions === "l")) ){
 
-    for (let i = 6; i < -1; i--){
-
-
-    if (userPredictions === computerSelection) {
+    //do {
         wins++;
-        userGuessesE1.textContent = `Guesses so far: ${userPredictions}`;
-        guessesLeftE1.textContent = `Guesses left: ${guessesMax}`
+        document.getElementById("user-wins").innerHTML = `Wins: ${wins}`;
+        //userGuessesE1.textContent = `Guesses so far: ${userPredictions}`;
+        //guessesLeftE1.textContent = `Guesses left: ${guessesMax}`
         //userGuessesE1.innerHTML = `Guesses so far:  `;
         //displayPredictions resets
-        //guessesMax resets
+        guessesMax = 6;
     } else {
-        userGuessesE1.textContent = `Guesses so far: ${userGuessesE1}`;
-    }
+        displayPredictions.push(userPredictions);
+        document.getElementById("user-guesses").innerHTML = `Guesses so far: ${displayPredictions}`;
+        guessesMax--;
+        document.getElementById("guesses-left").innerHTML = `Guesses left: ${guessesMax}`;
+        
+    } 
+    //while (i < -1);
 
 }
 
@@ -64,8 +68,9 @@ if ((userPredictions === "q" || (userPredictions === "z") || (userPredictions ==
 userWinsE1.textContent = `Wins: ${wins}`;
 userLossesE1.textContent = `Losses: ${losses}`;
 userGuessesE1.textContent = `Guesses so far: ${userGuessesE1}`;
+guessesLeftE1.textContent = `Guesses left: ${guessesMax}`
 
 
 //guessesMax reaches 0 then it resets 
 
-}}
+
