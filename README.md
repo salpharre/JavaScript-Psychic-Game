@@ -18,7 +18,7 @@ The user has six chances to guess the letter, if they are not lucky enough they 
 
 Bootstrap was used for styling but the function is all JavaScript.
 
-`if..else` conditionals nestled within a .onkeyup() function. 
+Sneak Peek: `if..else` conditionals nestled within a .onkeyup() function. 
 
 #### Technologies
 
