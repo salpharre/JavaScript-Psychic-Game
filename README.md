@@ -10,15 +10,15 @@ Game was created to practice JavaScript.
 
 * Launch
 
-* Sources
-
 ### General Info
 
-This game is to be played directly in the web browser. 
+This game is to be played directly in the web browser. It is a guessing game, designed for one user playing against the computer. 
 
+The user has six chances to guess the letter, if they are not lucky enough they loose a point. Scoring is simple, you win, 1 point; you loose, 1 loss to your bag. 
 
+Bootstrap was used for styling but the function is all JavaScript.
 
-
+`if..else` conditionals nestled within a .onkeyup() function. 
 
 #### Technologies
 
@@ -28,8 +28,4 @@ This game is to be played directly in the web browser.
 
 ##### Launch
 
-Game can be found here: *coming soon!*
-
-###### Sources
-
-* Unsplash for background image
+Game can be found here: https://salpharre.github.io/JavaScript-Psychic-Game/
