@@ -24,10 +24,12 @@ This game is to be played directly in the web browser.
 
 * Visual Studio Code 1.44.1
 
+* Bootstrap
+
 ##### Launch
 
 Game can be found here: *coming soon!*
 
 ###### Sources
 
-TBD
+* Unsplash for background image
