@@ -39,10 +39,10 @@ if (userPredictions === computerSelection){
     /* if conditional is true, the wins increase by 1 and is displayed */
         wins++;
 
-        userWinsE1.innerHTML = `Wins: ${wins}`;
-
     /* number of guesses allowed resets and is written over in html */
         guessesMax = 6;
+
+        userWinsE1.innerHTML = `Wins: ${wins}`;
 
         guessesLeftE1.innerHTML = `Guesses left: ${guessesMax}`;
         
@@ -55,10 +55,6 @@ if (userPredictions === computerSelection){
 
     /* Writes over the letters guessed to empty the text area */
         userGuessesE1.innerHTML = `Guesses so far: `;
-    
-    /* max number of guesses allowed for the user resets when the user wins */
-        guessesMax = 6;
-
 
     } 
     
