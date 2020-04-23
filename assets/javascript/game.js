@@ -33,11 +33,7 @@ let computerSelection = computerChoices[Math.floor(Math.random() * computerChoic
 
 /* conditional that must be true for block of text to run */
 
-if ((userPredictions === "q" || (userPredictions === "z") || (userPredictions === "a") || 
-(userPredictions === "e") || (userPredictions === "d") || (userPredictions === "c") || 
-(userPredictions === "t") || (userPredictions === "g") || (userPredictions === "b") || 
-(userPredictions === "u") || (userPredictions === "j") || (userPredictions === "m") || 
-(userPredictions === "o") || (userPredictions === "l")) ){
+if (userPredictions === computerSelection){
 
 
     /* if conditional is true, the wins increase by 1 and is displayed */
